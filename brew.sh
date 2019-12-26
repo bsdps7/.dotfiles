@@ -12,12 +12,16 @@ brew tap homebrew/cask
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 
-# Install brew formulae
+# Install newer zsh from Homebrew then change shell to it
 brew install zsh
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+
+# Install oh-my-zsh and the plugins zsh-autosuggestions and zsh-syntax-highlighting
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --noreplace-rc
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
+# Install more Homebrew formulae
 brew install wget
 brew install htop
 brew install mas
@@ -27,19 +31,19 @@ brew install grep
 brew install vim
 
 # Install brew casks
-brew cask install adoptopenjdk
-brew cask install alfred
-brew cask install discord
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install keepassxc
-brew cask install rectangle
-brew cask install sublime-text
-brew cask install the-unarchiver
-brew cask install tor-browser
-brew cask install virtual-studio-code
-brew cask install vlc
+brew cask install adoptopenjdk --no-quarantine
+brew cask install alfred --no-quarantine
+brew cask install discord --no-quarantine
+brew cask install dropbox --no-quarantine
+brew cask install google-chrome --no-quarantine
+brew cask install iterm2 --no-quarantine
+brew cask install keepassxc --no-quarantine
+brew cask install rectangle --no-quarantine
+brew cask install sublime-text --no-quarantine
+brew cask install the-unarchiver --no-quarantine
+brew cask install tor-browser --no-quarantine
+brew cask install visual-studio-code --no-quarantine
+brew cask install vlc --no-quarantine
 
 # Install brew cask fonts
 brew cask install font-fira-code
