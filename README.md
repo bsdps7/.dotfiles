@@ -1,13 +1,15 @@
 # .dotfiles
-Personal dotfiles for macOS using a git bare repository.
+Personal dotfiles for macOS using a Git bare repository.
 
 ## Installation
-You need to have git installed.
+You need to have Git installed.
 
-To install git with Homebrew:
+To install Git with Homebrew:
 ```
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install Git
 brew install git
 ```
 
