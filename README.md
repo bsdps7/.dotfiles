@@ -1,12 +1,20 @@
 # .dotfiles
 Personal dotfiles for macOS
 
-Install Homebrew:
+## Installation
+You need to have git installed.
+
+To install git with Homebrew:
 ```
+# Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
-```
-Then install git with Homebrew:
-```
+
 brew install git
+```
+
+Then run the following:
+```
+git clone --bare https://github.com/bsdps7/.dotfiles.git $HOME/.dotfiles
+$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
+$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 ```
