@@ -1,5 +1,5 @@
 # .dotfiles
-Personal dotfiles for macOS
+Personal dotfiles for macOS using a git bare repository.
 
 ## Installation
 You need to have git installed.
