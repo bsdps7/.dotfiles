@@ -17,4 +17,5 @@ Then run the following:
 git clone --bare https://github.com/bsdps7/.dotfiles.git $HOME/.dotfiles
 $(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 $(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
+source $HOME/.zshrc
 ```
