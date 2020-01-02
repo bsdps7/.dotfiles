@@ -4,7 +4,7 @@ path=( /usr/local/bin /usr/bin /bin /usr/sbin /sbin $path )
 export PATH
 
 ## add the GNU version tools to PATH
-path=( /usr/local/opt/coreutils/libexec/gnubin /usr/local/opt/findutils/libexec/gnubin /usr/local/opt/grep/libexec/gnubin $path )
+path=( /usr/local/opt/{coreutils,findutils,grep}/libexec/gnubin $path )
 export PATH
 
 ## Environmental variables
@@ -12,9 +12,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 ## Prompt
-autoload -U colors
-colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+source $ZDOTDIR/prompt.zsh
 
 ## Options
 setopt AUTO_CD
@@ -28,7 +26,7 @@ setopt SHARE_HISTORY
 setopt HIST_REDUCE_BLANKS
 setopt HIST_IGNORE_ALL_DUPS
 
-HISTFILE="$ZDOTDIR/.zsh_hitory"
+HISTFILE="$ZDOTDIR/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
 
@@ -36,16 +34,14 @@ SAVEHIST=1000
 fpath=( /usr/local/share/zsh-completions $fpath )
 
 ## Aliases
-alias dgit='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # dotfile git
-
-alias ls='ls -a --color'
-alias ll='ls -la --color'
-alias md='mkdir -p'
-alias rm='rm -i'
-alias cp='cp -i'
+source $ZDOTDIR/aliases.zsh
 
 autoload -Uz compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
 compinit
+
+_comp_options+=(globdots) # include hidden files in autocomplete
 
 ## Key bindings
 
