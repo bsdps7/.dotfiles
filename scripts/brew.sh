@@ -23,7 +23,7 @@ brew install tty-clock
 #brew install ctags
 #brew install htop
 brew install jq
-brew install mas
+#brew install mas
 #brew install ncmpcpp
 #brew install npm
 brew install neovim
@@ -50,14 +50,14 @@ brew install zsh-syntax-highlighting
 #brew install curl
 #brew install fzf
 brew install git
-brew install vim
+#brew install vim
 brew install zsh
 
 ## Install casks
 
 brew cask install alacritty --no-quarantine
 #brew cask install adoptopenjdk --no-quarantine
-brew cask install discord --no-quarantine 
+#brew cask install discord --no-quarantine 
 brew cask install dropbox --no-quarantine
 brew cask install eclipse-java --no-quarantine
 brew cask install eloston-chromium --no-quarantine
@@ -75,13 +75,12 @@ brew cask install vlc --no-quarantine
 
 ## Install fonts
 
-brew cask install font-hack
+#brew cask install font-hack
 brew cask install font-input
 brew cask install font-iosevka
 brew cask install font-mononoki
-brew cask install font-roboto-mono
 brew cask install font-sarasa-gothic
-brew cask install font-ubuntu
+#brew cask install font-ubuntu
 brew cask install font-victor-mono
 
 ## Cleanup
