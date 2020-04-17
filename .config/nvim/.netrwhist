@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/daniel/test'
+let g:netrw_dirhist_5='/Users/daniel/projects/webdev/js'
+let g:netrw_dirhist_4='/Users/daniel/.config/nvim'
+let g:netrw_dirhist_3='/Users/daniel'
+let g:netrw_dirhist_2='/Users/daniel/.cache/wal'
+let g:netrw_dirhist_1='/Users/daniel'
+let g:netrw_dirhist_0='/Users/daniel/.cache/ranger'
+let g:netrw_dirhist_9='/Users/daniel/.cache'
+let g:netrw_dirhist_8='/Users/daniel'
+let g:netrw_dirhist_7='/Users/daniel/.config'
