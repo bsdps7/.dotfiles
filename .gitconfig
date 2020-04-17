@@ -1,6 +1,6 @@
 [user]
 	email = danieltomelee64@gmail.com
-	name = Daniel Lee
+	name = daniel
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
