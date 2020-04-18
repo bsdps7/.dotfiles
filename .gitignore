@@ -1,6 +1,6 @@
 .dotfiles
 
-# macOS
+## macOS
 .CFUserTextEncoding
 .DS_Store
 .DS_Store?
@@ -10,9 +10,24 @@
 ehthumbs.db
 Thumbs.db
 
-# JetBrains
+## Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+## JetBrains
 .idea
 
-# General
+## Temporary files
+*.swp
+*.swo
+*~
+
+## General
 log/
 *.log
